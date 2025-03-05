@@ -12,19 +12,31 @@
          background-color: black;
          text-align: center;
          padding: 20px;
-
          position: fixed; 
          top: 0; 
          left: 0; 
          right: 0;   
          z-index: 10;
-          }
-.image{display: flex; justify-content: space-between; 
+         }
+   .image{
+      display: flex; 
+      justify-content: space-between; 
    width: 1200px;
    height: 400px; 
    gap: 21px;
    margin-left: auto;
    margin-right: auto;}
+
+   .hover-image {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.hover-image:hover {
+  transform: scale(1.1); 
+   opacity: 0.8; 
+}
    .circle-icons{display: flex; 
       justify-content: space-between; 
       width: 1198px;
@@ -101,6 +113,7 @@
       .button{
         
          padding: 10px 20px;
+         display: inline-block;
          color: white;
          text-decoration: none;
          border-radius: 4px;
@@ -219,12 +232,13 @@
 </h2>
 </div>
    
-   <div class=" image">
-      <img src="image 27.png" />
-      <img src="image 26.png" />
-      <img src="image 25.png" />
-      <img src="image 28.png" />
-   </div>
+<div class="image">
+   <img src="image 27.png" class="hover-image" />
+   <img src="image 26.png" class="hover-image" />
+   <img src="image 25.png" class="hover-image" />
+   <img src="image 28.png" class="hover-image" />
+ </div>
+ 
 
             <div class="content">
                <div style="width: 500px;">
@@ -323,12 +337,12 @@
       </div>
       <div style="display: flex; justify-content: center;">
          <div style="display: flex; justify-content: space-between; width: 600px;">
-            <div class="card">
 
+
+            <div class="card">
                <h2 style="  display: flex; justify-content: space-between; font-size: 24px; margin-top:0; color: rgba(48, 48, 48, 1);">Starter pack
                </h2>
                <ul style="height: 200px;">
-
                   <div class="card-text">
                      <li class="card-item">Trip</li>
                      <li class="card-item">Hotel</li>
@@ -342,10 +356,11 @@
                   2100$</div>
             </div>
             <div>
-               <div class=" card">
 
+
+            <div class="card">
                   <div style="width: 159px; height: 192px; ">
-                     <h2 style=" display: flex; justify-content: space-between; font-size:24px; margin-top:0 px; color: rgba(48, 48, 48, 1); ">Luxury pack</h2>
+               <h2 style=" display: flex; justify-content: space-between; font-size:24px; margin-top:0; color: rgba(48, 48, 48, 1); ">Luxury pack</h2>
                   <ul style="height: 200px;">
                      <div class="card-text">
                         <li class=" card-item">Starter pack</li>
@@ -357,7 +372,7 @@
                   
                   </ul>       
                     <div 
-                  style=" text-align: right; font-size: 32px; color: rgba(48, 48, 48, 1); padding-top: 45px; font-weight: bold;">
+                  style=" text-align: right; font-size: 32px; color: rgba(48, 48, 48, 1);  font-weight: bold; margin-top: 70px;">
                      4200$</div>
                </div>
             </div>
@@ -368,22 +383,30 @@
          <div class= "blackbox-text" >
                   <div> 
                      <p style="font-weight: bold;">Are you ready?</p>
-                     <div class="button" href="" >Order now</div>
+                     <!-- <div class="button" href="" >Order now</div> -->
+                     <a href="OrderNow.html" class="button">Order now</a>
+
+
                   </div>
          </div>
      
-    <div class="black-box">
-      <div class="black-box2">
-        Pine <br />Tour.
-        <div class="social-profiles">
-          <a class="fb-button" href="">
-            <img src="Vector.png" />
-            Facebook</a
-          >
-          <a class="fb-button" href=""> <img src="Frame.png" />Instagram</a>
-        </div>
-      </div>
-    </div>      
+         <div class="black-box">
+            <div class="black-box2">
+              Pine <br />Tour.
+              <div class="social-profiles">
+                <a class="fb-button" href="https://www.facebook.com" target="_blank">
+                  <img src="Vector.png" alt="Facebook" />
+                  Facebook
+                </a>
+                
+                <a class="fb-button" href="https://www.instagram.com/" target="_blank">
+                  <img src="Frame.png" alt="Instagram" />
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+                
     
     
 
